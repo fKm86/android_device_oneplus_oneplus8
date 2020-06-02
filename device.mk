@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlus8SystemUI \
     OnePlus8Frameworks \
     OnePlus8ProFrameworks \
+    OnePlus8ProSystemUI \
     OnePlus8SeriesBluetooth \
     OnePlus8SystemUI
 
