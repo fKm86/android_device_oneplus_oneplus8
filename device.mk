@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.qcom.rc \
     init.recovery.qcom.rc
 
 PRODUCT_COPY_FILES += \
@@ -67,3 +68,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
+
+# Vendor
+$(call inherit-product, vendor/oneplus/oneplus8/oneplus8-vendor.mk)
