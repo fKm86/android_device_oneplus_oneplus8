@@ -34,12 +34,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
     android.hardware.boot@1.0-impl.recovery \
-    bootctrl.kona
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.kona \
-    libcutils \
-    libz
+    bootctrl.kona.recovery
 
 # Common
 $(call inherit-product, device/oneplus/common/common.mk)
