@@ -39,7 +39,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.kona \
     libcutils \
-    librecovery_updater_msm \
     libz
 
 # Common
@@ -51,10 +50,10 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.pa.biometrics.fingerprint.inscreen@1.0-service.oneplus8
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus8
 
 PRODUCT_COPY_FILES += \
-    vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+    vendor/pixeldust/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
